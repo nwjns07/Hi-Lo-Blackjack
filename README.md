@@ -1,6 +1,3 @@
-# Hi-Lo-Blackjack
-Self-made Blackjack project, intended to be used as a "practice" for the Hi-Lo Counting system to better understand Blackjack hands and strategies.
-
 # Blackjack with Hi-Lo Counting
 
 A console Blackjack simulator written in C++, with a built-in Hi-Lo card-counting trainer.
@@ -23,8 +20,8 @@ A console Blackjack simulator written in C++, with a built-in Hi-Lo card-countin
 Requires a C++ compiler such as `g++`.
 
 ```bash
-g++ -std=c++17 -Wall -o blackjack *.cpp
+g++ -std=c++17 -Wall -o Blackjack *.cpp
 ./blackjack
 ```
 
-On Windows, run `blackjack.exe` instead of `./blackjack`.
+On Windows, run `Blackjack.exe` instead of `./Blackjack`.
