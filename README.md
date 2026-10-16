@@ -14,12 +14,9 @@ A console Blackjack simulator written in C++, with a built-in Hi-Lo card-countin
 
 ## Design
 
-The code is split into independent classes, so each part of the game can be changed without affecting the others:
-
-- **Shoe:** manages the decks, shuffling, and dealing
-- **Hand:** hand values, soft totals, and split logic
-- **Dealer:** dealer rules for when to hit or stand
-- **Player statistics:** tracks results across rounds
+- **Cards, Hand, Player:** structs for card data, hands (with bets and split state), and session statistics
+- **CardCounter:** tracks the running count, true count, and cards seen per rank
+- **Shoe and dealer logic:** shoe creation, shuffling (`std::mt19937`), dealing, and dealer play (hits soft 18) as standalone functions
 
 ## Build and Run
 
